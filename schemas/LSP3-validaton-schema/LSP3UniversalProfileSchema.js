@@ -10,7 +10,7 @@ const ImageSchema = new SimpleSchema({
   }
 });
 
-const linkSchema = new SimpleSchema({
+const LinkSchema = new SimpleSchema({
   title: String,
   url: String, // TODO: valid url check needed
 });
@@ -26,7 +26,7 @@ export const LSP3Profile = new SimpleSchema({
     type: Array
   },
   "links.$": {
-    type: linkSchema
+    type: LinkSchema
   },
   tags: {
     type: Array,
